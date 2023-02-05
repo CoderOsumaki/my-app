@@ -25,9 +25,9 @@ export default function TeaxtForm(props) {
         <div className="container my-3" >
             <textarea className="form-control" value={text} onChange={handleOnChange} id="exampleFormControlTextarea1" rows="10"></textarea>
         </div>
-        <button className= " btn btn-primary mx-2" onClick={handleOnClick}>Covert To Upper Case</button>
-        <button className= " btn btn-primary mx-2" onClick={handleOnClick2}>Covert To Lower Case</button>
-        <button className= " btn btn-primary mx-2" onClick={handleOnClick3}>CLEAR</button>
+        <button className= " btn btn-primary mx-2 my-2" onClick={handleOnClick}>Covert To Upper Case</button>
+        <button className= " btn btn-primary mx-2 my-2" onClick={handleOnClick2}>Covert To Lower Case</button>
+        <button className= " btn btn-primary mx-2 my-2" onClick={handleOnClick3}>CLEAR</button>
     </div>
     <div className='container my-4' style={{ color :props.mode === 'dark' ? 'white' : 'black'}}>
         <h1> Your text summery here</h1>

@@ -38,15 +38,15 @@ function App() {
   }
   return (
     <>
-      {/* <Router> */}
+      <Router>
       <Navbar mode={mode} togglemode={togglemode} />
       <Alert alert={alert} />
       <TeaxtForm heading="Enter your text here" mode={mode} />
-        {/* <Routes>
+        <Routes>
           <Route path="/about" element ={<About/>}/>
           <Route path="/" element ={<TeaxtForm heading="Enter your text here" mode={mode} />}/>
         </Routes>
-      </Router> */}
+      </Router>
     </>
   );
 }
