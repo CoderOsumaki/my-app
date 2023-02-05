@@ -2,14 +2,14 @@
 // import './App.css';
 import React, { useState } from 'react';
 import Alert from './components/Alert';
-import About from "./components/About";
+//import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TeaxtForm from "./components/TeaxtForm";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+// } from "react-router-dom";
 
 
 function App() {
@@ -38,15 +38,15 @@ function App() {
   }
   return (
     <>
-      <Router>
+      {/* <Router> */}
       <Navbar mode={mode} togglemode={togglemode} />
       <Alert alert={alert} />
       <TeaxtForm heading="Enter your text here" mode={mode} />
-        <Routes>
+        {/* <Routes>
           <Route path="/about" element ={<About/>}/>
           <Route path="/" element ={<TeaxtForm heading="Enter your text here" mode={mode} />}/>
         </Routes>
-      </Router>
+      </Router> */}
     </>
   );
 }
